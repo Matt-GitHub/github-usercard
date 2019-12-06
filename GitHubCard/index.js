@@ -5,7 +5,7 @@ axios
     let cardsDiv = document.querySelector(".cards");
     cardsDiv.appendChild(cardCreator(response.data));
 
-    // ** get followers data
+    // ** get followers data in data {followers_url}
     return response.data.followers_url;
   })
   .then(followers_url => followerData(followers_url))
